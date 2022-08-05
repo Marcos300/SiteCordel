@@ -43,11 +43,19 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    background-color: rgba(0, 91, 11, 0.788);
+    color:rgba(255, 255, 255, 0.885);
+    padding:2px;
+    border-radius: 10px;
 }
 
 a:hover {
     text-decoration: underline;
-    color: red;
+    color: rgb(252, 223, 1);
+}
+
+a::after{
+    content: '\00A0\1F517';
 }
 
 section {
@@ -60,10 +68,11 @@ section {
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.507);
 }
 
-section> h1 {
+section>h1 {
     text-align: center;
 }
-section>p{
+
+section>p {
     padding-bottom: 1px;
 }
 
@@ -79,16 +88,17 @@ section.normal {
 section>imagem {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.285);
-    box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.348);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.348);
     border-radius: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
 }
-section.imagem >p {
+
+section.imagem>p {
     display: inline-block;
-    color:white;
+    color: white;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.285);
     text-shadow: 1px 1px 0px black;
@@ -113,7 +123,7 @@ section#img02 {
 }
 
 
-section.apresentacao{
+section.apresentacao {
     background-image: url("../Imagens/brown-75178_1280.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -150,4 +160,33 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 1em;
+
+}
+
+footer div.autoria {
+    background-color: rgba(73, 72, 72, 0.94);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+footer div.agradecimentos {
+    background-color: rgba(136, 141, 136, 0.847);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    color:black;
+
+}
+
+footer #gratidao{
+    font-family: var(--fonte3);
+    color: rgb(252, 0, 0);
+}
+
+footer #autor{
+    font-family: var(--fonte3);
+    color:rgb(17, 3, 98)
 }
