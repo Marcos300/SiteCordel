@@ -19,7 +19,7 @@ body {
     font-family: var(--fonte1);
     min-height: 100vh;
     background-color: black;
-
+    font-size: 1em;
 }
 
 header {
