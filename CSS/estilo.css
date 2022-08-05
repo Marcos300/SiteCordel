@@ -74,6 +74,7 @@ section>h1 {
 
 section>p {
     padding-bottom: 1px;
+    border-radius: 10px;
 }
 
 section.normal {
